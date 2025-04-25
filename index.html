@@ -1,4 +1,16 @@
-<form action="scrape" method="GET">
-  <input type="url" name="url" placeholder="Enter URL">
-  <button type="submit">Scrape</button>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Scraping Tool</title>
+</head>
+<body>
+    <h2>Enter URL to Scrape</h2>
+    <form action="scrape" method="get">
+        URL: <input type="text" name="url" required><br><br>
+        <label><input type="checkbox" name="option" value="title"> Title</label><br>
+        <label><input type="checkbox" name="option" value="headings"> Headings</label><br>
+        <label><input type="checkbox" name="option" value="links"> Links</label><br><br>
+        <input type="submit" value="Scrape">
+    </form>
+</body>
+</html>
